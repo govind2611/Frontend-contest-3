@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contest 3| bootstrap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./gp.png" />
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light px-3">
+      <!-- logo -->
+      <a href="#navb" class="navbar-brand mb-0 h1 navbar-hover">My Website</a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- nav items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- first section [carousel, cards and paragraph]  -->
+    <div class="container">
+      <!-- first heading -->
+      <h1 class="text-justify mt-3">Bootstrap example</h1>
+      <!-- carousel-indicators -->
+      <div
+        id="hero-carousel"
+        class="carousel slide my-2"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- carousel-captions & images-->
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./1.jpg" class="d-block w-100 c-img" alt="slide 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./2.jpg" class="d-block w-100 c-img" alt="slide 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./3.jpg" class="d-block w-100 c-img" alt="slide 3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- some content part -->
+      <h3 class="text-justify mt-3">Some Content</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, minus!
+        Numquam eos provident accusantium autem corporis, ipsa ut laborum
+        pariatur quo quos consequuntur nulla totam et repellat cum facere quod,
+        sapiente molestiae veniam repellendus tempore eaque odio molestias.
+        Expedita aliquam nisi dignissimos numquam praesentium! Facere hic eum
+        totam sed, delectus animi possimus inventore similique, accusamus a
+        tenetur nemo rem adipisci commodi doloremque illum amet quis eos, quo
+        enim. Ducimus, eveniet? Obcaecati et cumque reprehenderit laboriosam
+        soluta possimus debitis, fugiat cupiditate.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam
+        expedita, vel sapiente deserunt ex mollitia alias asperiores maxime!
+        Laudantium, repellat eos iste vitae tempora, quibusdam, iure culpa
+        itaque in ipsum voluptatum obcaecati praesentium dolor quis quasi
+        perspiciatis libero similique magni consequatur! Provident, officia!
+        Nobis possimus consequuntur beatae, recusandae rerum eius totam adipisci
+        quisquam a, quos itaque nihil, ducimus laboriosam corrupti esse
+        accusantium laudantium praesentium debitis pariatur! Nam, nulla quasi.
+      </p>
+      <!-- cards -->
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./card1.jpg" class="card-img-top" alt="card 1" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Placeat nam quidem esse incidunt maxime recusandae amet? Porro
+                  modi accusantium facere consectetur dignissimos labore, magni
+                  quam quasi excepturi eligendi saepe aperiam blanditiis
+                  distinctio hic tenetur amet maiores quae vel consequuntur eos
+                  sit laboriosam? Iusto pariatur similique ullam quia nihil
+                  corporis explicabo dolores placeat optio? Consectetur maxime
+                  officiis, rerum asperiores quia ipsum tempore.
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./card2.jpg" class="card-img-top" alt="card 2" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet suscipit laborum ratione quos commodi nihil dolor
+                  voluptatum nemo repudiandae officiis. Reiciendis blanditiis
+                  natus odit recusandae quis laboriosam tempore laborum rerum.
+                  Culpa assumenda facere ab accusamus, explicabo blanditiis
+                  cumque magni perspiciatis dolore!
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./card3.jpg" class="card-img-top" alt="card 3" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nostrum molestias nulla, illo error harum, commodi quaerat sed
+                  impedit facilis fugit iure repudiandae esse. Perferendis sunt
+                  aut, doloribus, numquam unde omnis natus aspernatur mollitia
+                  dignissimos eius quo reprehenderit. Provident sunt magni sed
+                  impedit nam nihil ipsa eveniet! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second section [form and table] -->
+    <div class="container">
+      <!-- form -->
+      <h3 class="text-justify mt-2">Form</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <form>
+            <label for="" class="form-label">Name</label>
+            <input
+              type="text"
+              placeholder="Enter Your name"
+              class="form-control"
+            />
+
+            <label for="" class="form-label">Email address</label>
+            <input
+              type="email"
+              placeholder="Enter Your email"
+              class="form-control"
+            />
+
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              cols="30"
+              rows="4"
+              placeholder="Enter your message"
+            ></textarea>
+
+            <input type="submit" value="Submit" class="btn btn-primary mt-2" />
+          </form>
+        </div>
+      </div>
+      <!-- table -->
+      <h3 class="text-justify mt-4">Table</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <table id="example" class="table border-top" style="width: 100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Smith</td>
+                <td>john@example.com</td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Doe</td>
+                <td>jane@example.com</td>
+                <td>Ut at lectus ut mauris laoreet bibendum.</td>
+              </tr>
+              <tr class="foot">
+                <td>3</td>
+                <td>Bob Johnson</td>
+                <td>bob@example.com</td>
+                <td>
+                  Vivamus auctor eros in est vulputate, at tempus ipsum gravida.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
